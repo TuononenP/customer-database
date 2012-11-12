@@ -1,0 +1,5 @@
+Trang creates xsd from xml.
+
+e.g.
+java -jar /path/to/trang.jar -I xml -O xsd Customers.xml Customers.xsd
+

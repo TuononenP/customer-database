@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Customers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Customer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+        <xs:element ref="Address"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="Email"/>
+          <xs:element ref="Phone"/>
+        </xs:choice>
+        <xs:element ref="Notes"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Name" type="xs:string"/>
+  <xs:element name="Address">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Type"/>
+        <xs:element maxOccurs="unbounded" ref="Street"/>
+        <xs:element ref="PostalCode"/>
+        <xs:element ref="Town"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Street" type="xs:string"/>
+  <xs:element name="PostalCode" type="xs:integer"/>
+  <xs:element name="Town" type="xs:NCName"/>
+  <xs:element name="Email">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Type"/>
+        <xs:element ref="Value"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Phone">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Type"/>
+        <xs:element ref="Value"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Notes" type="xs:string"/>
+  <xs:element name="Type" type="xs:NCName"/>
+  <xs:element name="Value" type="xs:string"/>
+</xs:schema>

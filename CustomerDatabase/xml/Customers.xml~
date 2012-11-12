@@ -1,0 +1,58 @@
+       <Customer>
+               <Name>Asko A. Asiakas</Name>
+               <Address>
+                       <Type>VISITING_ADDRESS</Type>
+                       <Street>Asiakaskatu 8 B 9</Street>
+                       <Street>(PL 190)</Street>
+                       <PostalCode>12346</PostalCode>
+                       <Town>Asiakaskylä</Town>
+               </Address>
+
+               <Phone>
+                       <Type>WORK_PHONE</Type>
+                       <Value>+358 555 555 555</Value>
+               </Phone>
+
+               <Email>
+                       <Type>WORK_EMAIL</Type>
+                       <Value>asko.a.asiakas@ei.ole.olemassa</Value>
+               </Email>
+
+               <Phone>
+                       <Type>MOBILE_PHONE</Type>
+                       <Value>+358 50 999 999 999</Value>
+               </Phone>
+
+               <Notes>
+                       Asko on asiakas.
+               </Notes>
+       </Customer>
+       <Customer>
+               <Name>Erkki Esimerkki</Name>
+               <Address>
+                       <Type>VISITING_ADDRESS</Type>
+                       <Street>Esimerkinkatu 1</Street>
+                       <Street>(PL 100)</Street>
+                       <PostalCode>12346</PostalCode>
+                       <Town>Esimerkkikylä</Town>
+               </Address>
+
+               <Phone>
+                       <Type>WORK_PHONE</Type>
+                       <Value>+358 111 111 111</Value>
+               </Phone>
+
+               <Email>
+                       <Type>WORK_EMAIL</Type>
+                       <Value>erkki.esimerkki@ei.ole.olemassa</Value>
+               </Email>
+
+               <Phone>
+                       <Type>MOBILE_PHONE</Type>
+                       <Value>+358 40 222 222 222</Value>
+               </Phone>
+
+               <Notes>
+                       Erkki on asiakas.
+               </Notes>
+       </Customer>

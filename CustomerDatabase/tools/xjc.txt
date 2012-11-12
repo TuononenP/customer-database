@@ -1,0 +1,4 @@
+Xjc creates Java classes from XSD. Xjc comes with JAXB.
+
+e.g.
+xjc -p fi.arcusys.customerdb.jaxb /path/to/Customers.xsd -d /path/to/Arcusys/Asiakasrekisteri/src
